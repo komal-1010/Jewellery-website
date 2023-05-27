@@ -25,7 +25,7 @@ DELIMITER $$
 --
 -- Procedures
 --
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_banner` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_banner` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_bid BIGINT;
 DECLARE var_btype VARCHAR(10);
 DECLARE var_remark VARCHAR(500);
@@ -60,7 +60,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_category` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_catgid BIGINT;
 DECLARE var_catgname VARCHAR(50);
 DECLARE var_imgdata TEXT;
@@ -96,7 +96,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_companymaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_companymaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_cmpid BIGINT;
 DECLARE var_cmpname VARCHAR(100);
 DECLARE var_ownername VARCHAR(255);
@@ -145,7 +145,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_customermaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_customermaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_custid BIGINT;
 DECLARE var_custname VARCHAR(100);
 DECLARE var_mob VARCHAR(12);
@@ -186,7 +186,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_customsetting` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_customsetting` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_custid BIGINT;
 DECLARE var_sname TEXT;
 DECLARE var_svalue TEXT;
@@ -218,7 +218,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_enquirymaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_enquirymaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_enqid BIGINT;
 DECLARE var_logid BIGINT;
 DECLARE var_edate DATE;
@@ -252,7 +252,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_ImageuploadMaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_ImageuploadMaster` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_imgid BIGINT;
 DECLARE var_imgpath TEXT;
 DECLARE var_imgtype VARCHAR(50);
@@ -286,7 +286,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_login` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_login` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_logid BIGINT;
 DECLARE var_uname VARCHAR(100);
 DECLARE var_mob VARCHAR(12);
@@ -341,7 +341,7 @@ IF mode = 5 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_product` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_product` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_prodid BIGINT;
 DECLARE var_title VARCHAR(255);
 DECLARE var_catgid BIGINT;
@@ -392,7 +392,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_smstemplate` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_smstemplate` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_smsid BIGINT;
 DECLARE var_sms TEXT;
 DECLARE var_smstype VARCHAR(10);
@@ -423,7 +423,7 @@ IF mode = 4 THEN
 END IF;
 END$$
 
--- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_subcategory` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+CREATE DEFINER=`admin`@`database-1.czgpobln5rne.us-east-1.rds.amazonaws.com` PROCEDURE `sp_subcategory` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_subcatgid BIGINT;
 DECLARE var_catgid BIGINT;
 DECLARE var_subcatgname VARCHAR(50);
