@@ -25,7 +25,7 @@ DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_banner` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
+-- CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_banner` (IN `data` JSON, IN `mode` TINYINT(5))   BEGIN
 DECLARE var_bid BIGINT;
 DECLARE var_btype VARCHAR(10);
 DECLARE var_remark VARCHAR(500);
